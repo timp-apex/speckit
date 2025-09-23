@@ -47,7 +47,40 @@
 ## Constitution Check
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+### Next.js 15 App Router Compliance
+- [ ] All components default to Server Components unless client interactivity required
+- [ ] Server Actions used for all data mutations and form submissions
+- [ ] No client-side components created unnecessarily
+
+### TypeScript Type Safety
+- [ ] All code written in TypeScript with strict type-safety
+- [ ] Types inferred from Zod schemas for forms and API data
+- [ ] No implicit any types present
+
+### Component and Styling Standards
+- [ ] shadcn/ui components used for standard UI primitives
+- [ ] Tailwind CSS utility classes used for all styling
+- [ ] Custom components follow established design system patterns
+
+### State Management Architecture
+- [ ] React Query (TanStack Query) used for all server state
+- [ ] Zustand used for client-side UI state only
+- [ ] Clear separation between server and client state
+
+### Forms and Validation
+- [ ] React Hook Form used for all form state management
+- [ ] Zod schemas defined for all forms with resolver integration
+- [ ] Server-side validation matches client-side schemas
+
+### API Integration
+- [ ] Ascend SDK used as source of truth for data operations
+- [ ] Mock service layer used during development/testing
+- [ ] MockAuthProvider integrated for authentication state
+
+### Testing Requirements
+- [ ] Tests written before implementation (TDD)
+- [ ] Vitest and React Testing Library used for component testing
+- [ ] Playwright used for E2E testing of critical flows
 
 ## Project Structure
 
