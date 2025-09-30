@@ -1,19 +1,27 @@
 {
   "permissions": {
     "allow": [
-      "Bash(bazel run:*)",
       "mcp__figma-dev-mode-mcp-server__get_metadata",
       "mcp__figma-dev-mode-mcp-server__get_code",
       "mcp__figma-dev-mode-mcp-server__get_variable_defs",
       "mcp__figma-dev-mode-mcp-server__get_screenshot",
       "mcp__figma-dev-mode-mcp-server__get_code_connect_map",
-      "Bash(git add:*)",
       "Read(//tmp/**)",
+      "Bash(bazel:*)",
+      "Bash(mcp:*)",
+      "Bash(npx playwright:*)",
+      "Bash(npx prettier:*)",
+      "Bash(npm:*)",
+      "Bash(rm:*)",
+      "Bash(find:*)",
+      "Bash(lsof:*)",
+      "Bash(git:*)",
       "Bash(pkill:*)",
-      "Bash(npx playwright codegen:*)",
       "Bash(node:*)",
       "Bash(curl:*)",
-      "Bash(mcp add:*)"
+      "Bash(pkill -f \"npm run dev\")",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(curl:*)"
     ]
   },
   "enabledMcpjsonServers": [
